@@ -37,7 +37,9 @@ npm run dev
 # Output will be at dist/ folder
 npm run build
 # Server at http://localhost:[port]/
-npm start [--port=3000]
+# Note: if you want to use your costume port, you need to use "--" twice on the command line
+# (see: https://docs.npmjs.com/cli/run-script)
+npm start [-- --port=3000]
 ```
 
 ## Project Structure:
