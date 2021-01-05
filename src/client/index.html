@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Natural Language Processing</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="noselect">
+        <p>Natural Language Processing. Beep-boop</p>
+      </header>
+      <main>
+        <img src="assets/img/logo.png" alt="logo">
+        <textarea id="SA-Text" placeholder="Input text for Sentiment Analysis"></textarea>
+        <button id="AnalyzeBtn">Analyze</button>
+        <div id="results" class="hide">
+          <p class="success">Results:</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Level</th>
+                <th>Text</th>
+                <th>Score tag (tone)</th>
+                <th>Agreement</th>
+                <th>Confidence</th>
+              </tr>
+            </thead>s
+            <tbody id="output">
+              <!-- Place for output from JS -->
+            </tbody>
+          </table>
+          <p id="sub_results" class="success"></p>
+        </div>
+        <div id="error" class="hide">
+          <p class="error"><strong>Error:</strong> <span id="error_msg"></span></p>
+        </div>
+      </main>
+      <footer>
+        <p>Have a nice day!</p>
+      </footer>
+    </div>
+  </body>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js');
+      });
+    }
+  </script>
+</html>
