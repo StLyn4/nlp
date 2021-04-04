@@ -1,8 +1,8 @@
 // Place for importing libs, styles etc
 
+import * as OfflinePluginRuntime from 'offline-plugin/runtime';
 if (process.env.NODE_ENV === 'production') {
   // installing offline-plugin sw
-  import * as OfflinePluginRuntime from 'offline-plugin/runtime';
   OfflinePluginRuntime.install();
 }
 

@@ -7,11 +7,13 @@
     "build": "webpack --config ./webpack.config/prod.js",
     "dev": "node src/server/index.js --mode=dev --config=./webpack.config/dev.js",
     "start": "node src/server/index.js",
-    "test": "jest",
-    "heroku-postbuild": "webpack --config ./webpack.config/prod.js"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "14.x"
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
