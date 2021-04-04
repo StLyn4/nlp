@@ -2,7 +2,7 @@ const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const argv = require('yargs').argv;
+const { argv } = require('yargs');
 const child_process = require('child_process');
 const SA = require('./SA');
 
