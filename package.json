@@ -1,7 +1,7 @@
 {
   "name": "project-4",
   "version": "1.0.0",
-  "description": "## This project requires you to build a web tool that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites.",
+  "description": "This web tool allows users to run Natural Language Processing (NLP) on articles or any other text",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config ./webpack.config/prod.js",

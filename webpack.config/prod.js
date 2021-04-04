@@ -13,7 +13,7 @@ const baseWebpackConfig = require('./base');
 module.exports = merge(baseWebpackConfig, {
   mode: 'production',
   plugins: [
-    //new OfflinePlugin(),
+    // new OfflinePlugin(),
     new WorkboxPlugin.GenerateSW({
       inlineWorkboxRuntime: true
     }),

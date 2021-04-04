@@ -4,10 +4,12 @@
     <h1>Webpack Project</h1>
   </div>
   <p>
-    This project requires you to build a web tool that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites.
+    This web tool allows users to run Natural Language Processing (NLP) on articles or any other text.
   </p>
 </div>
 
+### Demo
+You can find working site [here](https://vv-nlp.herokuapp.com/)
 
 ## Build Setup:
 * Insert your Meaning Cloud API key to .env file like this:
@@ -18,11 +20,15 @@ API_KEY=****
 ``` bash
 # Install dependencies:
 npm install
+# or
+yarn install
 ```
 
 ``` bash
 # Testing with JEST
 npm run test
+# or
+yarn install
 ```
 
 * For development mode:
@@ -30,16 +36,22 @@ npm run test
 # Server with hot reload at http://localhost:8080/
 # Please note that the script will start an additional server on the 3000th port for the API
 npm run dev
+# or
+yarn run dev
 ```
 
 * For production mode:
 ``` bash
 # Output will be at dist/ folder
 npm run build
+# or
+yarn run build
 # Server at http://localhost:[port]/
 # Note: if you want to use your costume port, you need to use "--" twice on the command line
 # (see: https://docs.npmjs.com/cli/run-script)
 npm start [-- --port=3000]
+# or
+yarn run start [--port=3000]
 ```
 
 ## Project Structure:
