@@ -1,8 +1,10 @@
 // Place for importing libs, styles etc
 
-// installing offline-plugin sw (replaced with workbox)
-// import * as OfflinePluginRuntime from 'offline-plugin/runtime';
-// OfflinePluginRuntime.install();
+if (process.env.NODE_ENV === 'production') {
+  // installing offline-plugin sw
+  import * as OfflinePluginRuntime from 'offline-plugin/runtime';
+  OfflinePluginRuntime.install();
+}
 
 // JS
 import 'regenerator-runtime/runtime';
