@@ -28,7 +28,7 @@ yarn install
 # Testing with JEST
 npm run test
 # or
-yarn install
+yarn run test
 ```
 
 * For development mode:
