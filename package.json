@@ -1,5 +1,5 @@
 {
-  "name": "project-4",
+  "name": "nlp",
   "version": "1.0.0",
   "description": "This web tool allows users to run Natural Language Processing (NLP) on articles or any other text",
   "main": "index.js",
@@ -9,8 +9,12 @@
     "start": "node src/server/index.js",
     "test": "jest"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Vsevolod Volkov",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StLyn4/nlp.git"
+  },
   "engines": {
     "node": "14.x"
   },
